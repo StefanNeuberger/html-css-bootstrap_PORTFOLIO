@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+	<title>Bootstrap portfolio</title>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!-- NAVBAR -->
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-inverse navbar-costum">
+				  <div class="container-fluid">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>                        
+				      </button>
+				      <a class="navbar-brand" href="#">WebSiteName</a>
+				    </div>
+				    <div class="collapse navbar-collapse" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a class="nav-home" href="#">Home</a></li>
+				        <li class="dropdown">
+				          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#bootstrap-portfolio">Bootstrap portfolio</a></li>
+				            <li><a href="#">Page 1-2</a></li>
+				            <li><a href="#">Page 1-3</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a  class="nav-span" href="#"><span class="glyphicon glyphicon-user"></span>Contact</a></li>
+				      </ul>
+				    </div>
+				  </div>
+				</nav>
+			</div>
+		</div>
+		
+
+		<!-- HEADER -->
+		<header class="row test">
+			<div class="col-md-4 logo-container">
+				<img src="images/udacity-logo.jpg" alt="udacity-logo" class="img-fluid title-logo">
+			</div>
+			<div class="col-md-8 text-right text-uppercase title-container">
+				<h1 class="title-super text-thin">stefan neuberger</h1>
+				<h4>Front-developer ninja</h4>
+			</div>
+		</header>
+
+		<!-- HORIZONTAL LINE -->
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+			</div>
+		</div>
+
+		<!-- MAIN IMAGE -->
+		<div class="row main-image-container">
+			<div class="col-md-12 main-image-col">
+				<img src="images/puppy-1200.jpg" alt="puppy Image" class="img-fluid main-image"
+					srcset="images/puppy-400.jpg 400w,
+              		images/puppy-600.jpg 600w,
+              		images/puppy-800.jpg 800w"
+          			sizes="100vw">
+				<div class="main-overlay center-text">
+            		<div class="main-overlay-text">I'm a Front-End Ninja</div>
+          		</div>
+			</div>
+		</div>
+
+		<!-- FEARTURED WORKS TITLE -->
+		<div class="row featured-work-title-container">
+			<div class="col-md-12 featured-work-title-col">
+				<h2 class="text-muted">Featured Works</h2>
+			</div>
+		</div>
+
+		<!-- FEARTURED WORKS INDIVIDUAL-->
+		<div class="row text-center work-container">
+
+			<!-- WORK 1 -->
+			<div class="col-sm-6 col-md-4 work-col" id="bootstrap-portfolio">
+				<img src="images/work.jpg" alt="work-one image" class="img-fluid work-image" data-toggle="modal" data-target="#work1">
+				<div class="work-overlay">
+              		<h2 data-toggle="modal" data-target="#work1">Project 1</h2>
+              		<h4 data-toggle="modal" data-target="#work1">some stuff</h4>
+            	</div>
+				<h3 class="text-uppercase">my work</h3>
+				<a href="https://github.com/udacity/MEDINA" class="work-link">github</a>
+			</div>
+
+			<!-- WORK 2 -->
+			<div class="col-sm-6 col-md-4 work-col">
+				<img src="images/code.jpg" alt="work-one image" class="img-fluid work-image" data-toggle="modal" data-target="#work2">
+				<div class="work-overlay">
+              		<h2 data-toggle="modal" data-target="#work2">Project 2</h2>
+              		<h4 data-toggle="modal" data-target="#work2">some stuff</h4>
+            	</div>
+				<h3 class="text-uppercase">my work</h3>
+				<a href="https://github.com/udacity/MEDINA" class="work-link">github</a>
+			</div>
+
+			<!-- WORK 3 -->
+			<div class="col-sm-12 col-md-4 work-col">
+				<img src="images/board.jpg" alt="work-one image" class="img-fluid work-image" data-toggle="modal" data-target="#work3">
+				<div class="work-overlay">
+              		<h2 data-toggle="modal" data-target="#work3">Project 3</h2>
+              		<h4 data-toggle="modal" data-target="#work3">some stuff</h4>
+            	</div>
+				<h3 class="text-uppercase">my work</h3>
+				<a href="https://github.com/udacity/MEDINA" class="work-link">github</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+    <footer class="center-text">
+       	<p>&copy; 2017 Stefan Neuberger</p>
+    </footer>
+
+	<!-- MODALS -->
+
+	<!-- MODAL 1 -->
+    <div class="modal fade" id="work1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-uppercase">
+                    <h4 class="modal-title" id="myModalLabel">Bootstrap Portfolio</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid modal-image" src="images/work.jpg">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2 -->
+    <div class="modal fade" id="work2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-uppercase">
+                    <h4 class="modal-title" id="myModalLabel">Bootstrap Portfolio</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid modal-image" src="images/code.jpg">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3 -->
+    <div class="modal fade" id="work3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-uppercase">
+                    <h4 class="modal-title" id="myModalLabel">Bootstrap Portfolio</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid modal-image" src="images/board.jpg">
+                    This was my first project in this class. I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

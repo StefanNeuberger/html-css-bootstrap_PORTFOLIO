@@ -1,0 +1,175 @@
+/** {
+	border: 2px solid red;
+}*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #747704;
+	font-weight: 300;
+}
+
+.container,
+.navbar-costum,
+.dropdown-menu,
+.nav-home,
+.navbar-brand,
+.dropdown-toggle,
+.nav-span,
+.dropdown-menu {
+	font-family: 'Roboto', sans-serif;
+	color: #747704;
+	font-weight: 300;
+}
+
+.text-muted {
+	color: #bcbbbb;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+.title-super {
+	font-size: 50px;
+}
+
+.title-logo {
+	margin-top: 20px;
+	float: left;
+}
+
+img {
+	height:auto;
+	max-width: 100%;	
+}
+
+hr {
+	margin: 10px 0 10px 0;
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+/***** OVERLAY FOR WORK SECTION ******/
+
+.work-image {
+	opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: relative;
+}
+
+.work-overlay {
+	transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.work-col:hover .work-image {
+	opacity: 0.3;
+}
+
+.work-col:hover .work-overlay {
+	opacity: 0.9;
+	transition: all 0.3s ease-in-out;
+}
+
+/***** OVERLAY FOR MAIN SECTION ******/
+
+.main-overlay-text {
+	font-weight: 200;
+	font-size: 1.6em;
+}
+
+.main-image-col {
+	position: relative;
+  width: 100%;
+}
+
+.main-overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height:0;
+	transition: .5s ease;
+}
+
+.main-overlay-text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.main-image-col:hover .main-overlay {
+	bottom: 0;
+  height: 100%;
+}
+
+.modal-image {
+	height:auto;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.navbar-costum {
+  background-color: black;
+  border-color: black;
+}
+
+footer {
+	width: 100%;
+	height: 20px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+
+	.main-overlay-text {
+    font-weight: 100;
+    font-size: 3em;
+    padding-top: 40px;
+  }  	
+}
+
+@media screen and (max-width: 767px) {
+
+	.title-super {
+  	font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .title-super {
+      font-size: 30px;
+      vertical-align: middle;
+  }
+
+  .title-logo {
+    height: 90px;
+  }
+}
